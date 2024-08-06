@@ -46,8 +46,6 @@ scheduler_cfg:
   gamma: 0.1
   milestones:
     - 70000
-    - 110000
-    - 140000
   scheduler: MultiStepLR
 
 trainer_cfg:
@@ -60,7 +58,7 @@ trainer_cfg:
   save_iter: 5000
   save_name: GaitSTR
   sync_BN: true
-  total_iter: 150000
+  total_iter: 80000
   sampler:
     batch_shuffle: true
     batch_size:
